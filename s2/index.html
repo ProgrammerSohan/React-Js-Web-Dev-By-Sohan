@@ -13,15 +13,11 @@
     />
     <link rel="stylesheet" href="componets.css" />
     <link rel="stylesheet" href="style.css" />
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- todo: Include react -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- todo: Include babel -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <title>mm Education</title>
   </head>
   <body>
@@ -391,5 +387,14 @@
     <script src="nav.js"></script>
     <!-- Update -->
     <script src="testimonials.js"></script>
+    <script type="text/babel">
+        console.log("Babel");
+        const NewHeader = () => {
+          return <h1>Hello From React By Sohan</h1>;
+        };
+ ReactDOM.render(<NewHeader />,document.getElementById("header"));
+ 
+
+    </script>
   </body>
 </html>

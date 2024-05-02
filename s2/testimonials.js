@@ -1,5 +1,5 @@
 const testimonials = document.querySelectorAll(".testimonial");
-console.log(testimonials);
+//console.log(testimonials);
 document.addEventListener("DOMContentLoaded", () => {
   isElementInViewport;
 
