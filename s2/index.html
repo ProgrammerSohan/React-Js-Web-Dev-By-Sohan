@@ -390,8 +390,16 @@
     <script type="text/babel">
         console.log("Babel");
        function NewHeader (){
-          return <h1>this is a new header by Sohan!!!</h1>;
-        };
+          return (
+          <>
+          <h1>this is a new header by Sohan!!!</h1>{" "}
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed nisi, porro laborum, quasi aperiam a repudiandae similique molestias quod corrupti iusto quia magnam ipsa quae. Non laboriosam quaerat autem placeat!
+          </p>
+          
+          </>
+          );
+        }
  ReactDOM.render(<NewHeader />,document.getElementById("header"));
  
 
